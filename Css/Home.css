@@ -21,11 +21,22 @@ img {
 
 /* NAVIGATION BAR STYLING */
 .nav {
+  height: 100px;
   padding-inline: 3rem;
-  margin: 3rem auto;
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
   position: sticky;
   top: 3rem;
+  top: 0;
+  z-index: 1;
+
+  transition: background-color 0.3s;
 }
+
+.nav.sticking {
+  background-color: black;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -196,12 +207,12 @@ img {
   }
 
   .nav-bar-links {
-    top: 2rem;
+    top: 5rem;
     right: 3rem;
     height: auto;
     width: 30%;
     position: absolute;
-    background-color: rgba(34, 32, 32, 0.192);
+    background-color: rgba(34, 32, 32, 0.801);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     z-index: 1;
